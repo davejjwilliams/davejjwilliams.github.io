@@ -1,3 +1,11 @@
-.date {
+.bold {
   font-weight: bold;
+}
+
+.italic {
+  font-weight: italic;
+}
+
+.profile-photo {
+    max-width:200px;
 }
