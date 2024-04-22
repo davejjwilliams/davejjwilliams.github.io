@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -7,8 +11,12 @@
 }
 
 .profile-photo {
-    display: block;
-    width:200px;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.highlight {
+  color: red;
 }
