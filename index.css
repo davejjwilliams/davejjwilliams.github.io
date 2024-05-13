@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+h2 {
+  color: rgb(96, 96, 96);
+}
+
 h3 {
   padding-top: 70px;
 }
