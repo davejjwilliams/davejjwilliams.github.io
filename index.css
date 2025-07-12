@@ -41,6 +41,10 @@ h4 {
   margin-top: 15px;
 }
 
+h3 {
+  padding-top: 60px;
+}
+
 p {
   margin-bottom: 5px;
 }
@@ -48,11 +52,6 @@ p {
 ul {
   margin: 0;
   padding: 0 20px;
-}
-
-hr {
-  margin: 35px 0;
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .bold {
@@ -71,7 +70,7 @@ hr {
   max-width: 300px;
   object-fit: cover;
   box-shadow: 3px 3px 8px rgba(96, 96, 96, 0.6);
-  border-radius: 10px;
+  border-radius: 50%;
 }
 
 .highlight {
@@ -85,7 +84,7 @@ hr {
 
 .glass-card {
   background: rgba(236, 236, 236, 0.4);
-  border-radius: 10px;
+  border-radius: 25px;
   padding: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
