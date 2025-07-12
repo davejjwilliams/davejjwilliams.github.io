@@ -2,12 +2,56 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background: linear-gradient(135deg, #f8f5ff 0%, #f3efff 20%, #f0ecff 30%, #ebe6ff 40%, #f0ecff 60%, #f3efff 80%, #f8f5ff 100%);
+  background-size: 400% 400%;
+  background-attachment: fixed;
+  min-height: 100vh;
+  animation: flowingGradient 8s ease-in-out infinite;
+}
+
+@keyframes flowingGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  25% {
+    background-position: 25% 75%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  75% {
+    background-position: 75% 25%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 h2 {
   color: rgb(96, 96, 96);
 }
 
-h3 {
-  padding-top: 70px;
+h4 {
+  margin-top: 15px;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+ul {
+  margin: 0;
+  padding: 0 20px;
+}
+
+hr {
+  margin: 35px 0;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .bold {
@@ -25,7 +69,8 @@ h3 {
   width: 100%;
   max-width: 300px;
   object-fit: cover;
-  box-shadow: 5px 5px 10px rgb(96, 96, 96);
+  box-shadow: 3px 3px 8px rgba(96, 96, 96, 0.6);
+  border-radius: 10px;
 }
 
 .highlight {
@@ -35,6 +80,13 @@ h3 {
 .navbar-fixed-top {
   top: -70px;
   opacity: 0;
+}
+
+.glass-card {
+  background: rgba(236, 236, 236, 0.4);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 @media only screen and (max-width: 768px) {
