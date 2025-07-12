@@ -8,6 +8,7 @@ body {
   background-attachment: fixed;
   min-height: 100vh;
   animation: flowingGradient 8s ease-in-out infinite;
+  margin-bottom: 20px;
 }
 
 @keyframes flowingGradient {
