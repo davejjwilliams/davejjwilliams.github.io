@@ -1,14 +1,23 @@
+:root {
+  --background-light: #f4f6f0;
+  --background-sage: #e8f0e4;
+  --background-nav: #d2dfd1;
+  --text-color: #2d3e2d;
+  --text-muted: #788778;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background: linear-gradient(135deg, #f8f5ff 0%, #f3efff 20%, #f0ecff 30%, #ebe6ff 40%, #f0ecff 60%, #f3efff 80%, #f8f5ff 100%);
-  background-size: 400% 400%;
+  background: linear-gradient(135deg, var(--background-sage) 0%, var(--background-light) 34%, var(--background-sage) 67%, var(--background-light) 100%);
+  background-size: 300% 300%;
   background-attachment: fixed;
   min-height: 100vh;
-  animation: flowingGradient 8s ease-in-out infinite;
+  animation: flowingGradient 10s ease-in-out infinite;
   margin-bottom: 20px;
+  color: var(--text-color);
 }
 
 @keyframes flowingGradient {
@@ -33,35 +42,6 @@ body {
   }
 }
 
-h2 {
-  color: rgb(96, 96, 96);
-}
-
-h4 {
-  margin-top: 15px;
-}
-
-h3 {
-  padding-top: 60px;
-}
-
-p {
-  margin-bottom: 5px;
-}
-
-ul {
-  margin: 0;
-  padding: 0 20px;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.italic {
-  font-weight: italic;
-}
-
 .profile-photo {
   display: block;
   margin-left: auto;
@@ -82,11 +62,61 @@ ul {
   opacity: 0;
 }
 
+.navbar {
+  background-color: var(--background-nav);
+  box-shadow: 0 3px 0 var(--shadow-color);
+}
+
 .glass-card {
-  background: rgba(236, 236, 236, 0.4);
-  border-radius: 25px;
-  padding: 10px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.12),
+    0 4px 16px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(16px) saturate(180%);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform-style: preserve-3d;
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-card:hover {
+  box-shadow: 
+    0 20px 50px rgba(0, 0, 0, 0.15),
+    0 10px 25px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+h2 {
+  color: var(--text-muted);
+}
+
+h3 {
+  padding-top: 60px;
+}
+
+h4 {
+  margin-top: 15px;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+ul {
+  margin: 0;
+  padding: 0 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-weight: italic;
 }
 
 @media only screen and (max-width: 768px) {
