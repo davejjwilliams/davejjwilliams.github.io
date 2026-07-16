@@ -181,6 +181,17 @@ ul {
   color: #fff;
 }
 
+.slides-btn {
+  background-color: #00838f;
+  border-color: #00838f;
+  color: #fff;
+}
+.slides-btn:hover {
+  background-color: #006064;
+  border-color: #006064;
+  color: #fff;
+}
+
 .resume-btn {
   background-color: #2e7d32;
   border-color: #2e7d32;
